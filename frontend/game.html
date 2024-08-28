@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play | Shadow of the colossus</title>
+
+    <link rel="shortcut icon" href="./assets/ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/sass/globals.css" />
+    <link rel="stylesheet" href="./styles/sass/pages/game.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script defer src="./scripts/game.js"></script>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <section id="controllers">
+        <div class="wrapper">
+          <button type="button" id="pauseButton" class="clickable selectable">
+            <img src="./assets/icons/arrow-right.svg" alt="Arrow Right" />
+            Pausar Jogo
+          </button>
+          <div>
+            <p>tempo: <span id="timer">00:00</span></p>
+            <p>flips: <span id="flips">00</span></p>
+          </div>
+        </div>
+      </section>
+      <section id="cards-wrapper">
+        <div class="wrapper"></div>
+      </section>
+      <section id="popUp" data-state="opened">
+        <div class="wrapper">
+          <button class="home clickable selectable" type="button" id="home">
+            Retornar para tela inicial
+          </button>
+          <h2>
+            Derrote todos os bosses <br />
+            e salve Mono
+          </h2>
+          <div class="input">
+            <label class="message" for="name">Digite seu nome: </label>
+            <div class="input-wrapper">
+              <input id="name" type="text" maxlength="100" />
+              <label class="error" for="name">Por favor, digite seu nome</label>
+            </div>
+          </div>
+          <div class="controllers">
+            <button class="clickable selectable" type="button" id="play">
+              Começar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="pause" data-map="small" data-state="closed">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <button type="button" id="continue" class="clickable selectable">
+                <img src="./assets/icons/arrow-right.svg" alt="Arrow Right" />
+                Continuar
+              </button>
+            </li>
+            <li>
+              <button type="button" id="quit" class="clickable selectable">
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="Arrow Right"
+                />Retornar para tela inicial
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="loading" data-state="opened">
+        <div class="spinner">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

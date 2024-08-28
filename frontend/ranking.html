@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game | Shadow of the colossus</title>
+
+    <link rel="shortcut icon" href="./assets/ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/sass/globals.css" />
+    <link rel="stylesheet" href="./styles/sass/pages/ranking.css" />
+
+    <script defer src="./scripts/ranking.js"></script>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <section class="controllers">
+        <div class="wrapper">
+          <button type="button" id="home" class="clickable selectable">
+            <img src="./assets/icons/arrow-right.svg" alt="Arrow Right" />
+            Retornar para tela inicial
+          </button>
+        </div>
+      </section>
+      <section class="rank">
+        <div class="wrapper">
+          <h2 class="title">Ranking</h2>
+          <div class="box">
+            <table>
+              <thead>
+                <tr>
+                  <th>Posição</th>
+                  <th>Nome</th>
+                  <th>Movimentos</th>
+                  <th>Tempo</th>
+                  <th>Data</th>
+                  <th>Completado</th>
+                </tr>
+              </thead>
+              <tbody id="players"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="loading" data-state="opened">
+        <div class="spinner">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game | Shadow of the colossus</title>
+
+  <link rel="shortcut icon" href="./assets/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/sass/globals.css">
+  <link rel="stylesheet" href="./styles/sass/pages/index.css">
+
+  <script defer src="./scripts/home.js"></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <section class="hero-section">
+      <div class="wrapper">
+        <img class="logo" src="./assets/images/logo.png" alt="Shadow of the Colossus logo">
+        <ul class="selection">
+          <li><button type="button" id="newGame" class="clickable selectable"><img src="./assets/icons/arrow-right.svg" alt="Arrow Right">Novo Jogo</button></li>
+          <li><button type="button" id="ranking" class="clickable selectable"><img src="./assets/icons/arrow-right.svg" alt="Arrow Right">Ranking</button></li>
+          <li><button type="button" id="openOptions" class="clickable selectable"><img src="./assets/icons/arrow-right.svg" alt="Arrow Right">Opções</button></li>
+        </ul>
+        <button type="button" id="copyright" class="copyright">© 2005 Sony Computer Ententainment Inc.</button>
+      </div>
+    </section>
+    <section id="informations" data-state="opened">
+      <div class="wrapper">
+        <h2>Desenvolvimento do projeto</h2>
+        <p>
+        Aristofany Herderson G. de S. Menezes <br>
+        Disciplina: Programação para Internet <br>
+        Professor: Marcelo Figueiredo Barbosa Júnior <br>
+        IFRN - Campus Santa Cruz/RN <br>
+        Todos os direitos reservados ⓒ 
+      </p>
+      <button id="closeInformation" class="selectable clickable" type="button">Voltar</button>
+      </div>
+    </section>
+    <section id="options" data-state="closed">
+      <div class="wrapper">
+        <div class="box">
+          <div class="area">
+            <div class="control" id="vibration">
+              <p>Vibração</p>
+              <div class="options">
+                <button class="clickable off">OFF</button>
+                <button class="clickable on" data-state="active">ON</button>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="control" id="volume">
+              <p>Volume</p>
+              <div class="options">
+                <div class="range">
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                  <div class="input clickable"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="return clickable selectable" type="button" id="closeOptions">Voltar</button>
+      </div>
+    </section>
+    <section id="loading" data-state="closed">
+      <div class="spinner">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>      
+    </section>
+  </div>
+</body>
+</html>
